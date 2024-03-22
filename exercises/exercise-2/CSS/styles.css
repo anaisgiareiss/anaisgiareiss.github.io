@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(231, 214, 192);
+    max-width: 700px;
+    margin: auto;
+}
+
+main {
+    background-color: rgb(179, 214, 214);
+}
+img {
+    display: block;
+    max-width: 100%;
+    padding: 2rem;
+    border: border-width border-style border-color;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: blue;
+
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    color:coral
+}
+
+h1 {
+    color:brown
+}
+
+.highlighted-text {
+    background-color: rgb(226, 226, 134);
+    font-weight: lighter
+    ;}
