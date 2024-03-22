@@ -1,8 +1,9 @@
 nav {
     font-size: medium;
     font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    position: fixed;
 }
-
 
 
 body {
@@ -13,6 +14,8 @@ body {
 
 main {
     background-color: rgb(179, 214, 214);
+    max-width: 100%;
+    margin-left: 320px;
 }
 img {
     display: block;
@@ -43,3 +46,7 @@ h1 {
     background-color: rgb(226, 226, 134);
     font-weight: lighter
     ;}
+
+
+
+padding: hover;
