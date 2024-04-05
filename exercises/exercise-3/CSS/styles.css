@@ -1,0 +1,84 @@
+
+/* navigation */
+nav {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+    position: fixed;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Absans';
+    src: url('../fonts/Absans-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'SpratVF';
+    src: url('../fonts/Sprat-Regular.woff2');
+}
+
+/* body  */
+body {
+    background-color: rgb(231, 214, 192);
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Absans', sans-serif;
+}
+
+/* main */
+main {
+    background-color: rgb(179, 214, 214);
+    max-width: 100%;
+    margin-left: 320px;
+}
+
+/* images */
+img {
+    display: block;
+    max-width: 100%;
+    padding: 2rem;
+    border: border-width border-style border-color;
+    border-width: 2px;
+    border-style: dashed;
+    border-color: blue;
+    box-sizing: border-box;
+}
+
+/* text */
+p {
+    font-size: 18px;
+    font-family: 'SpratVF', Regular;
+}
+
+/* header 3 */
+h3 {
+    color:coral
+}
+
+h3 + p {
+    text-indent: 2rem;
+}
+
+/* header 1 */
+h1 {
+    color:brown
+}
+
+h1 + p {
+    text-indent: 2rem;
+}
+
+.highlighted-text {
+    background-color: rgb(226, 226, 134);
+    font-weight: lighter
+    ;}
+
+.navigation a{
+    color:rgb(148, 12, 80)
+}
+
+.navigation a:hover{
+    color:aquamarine
+}
+

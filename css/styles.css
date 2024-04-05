@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@keyframes tracking {
+    0% {letter-spacing: 0;}
+    100% {letter-spacing: 10px;}
+}
+
+h1 {
+    animation: tracking 2s ease infinite alternate;
+}
+header {
+    flex-basis: 100%;
+    flex-grow: 1;
+    border:1px solid tomato;
+    padding: 2rem;
+}
+
+main {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+section {
+    border:1px solid blue;
+    padding: 2rem;
+    display: flex;
+   flex-wrap: wrap;
+}
+
+h2 {
+    flex-basis: 100%;
+}
+
+ol {
+    list-style: none;
+    flex-basis: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    flex-basis: 50%;
+    border: 1px solid green;
+    padding: 2rem;
+    box-sizing: border-box;
+    background-color: tomato;
+    transition: background-color 1s ease-in-out;
+    box-shadow: 10px 10px 5px rebeccapurple;
+}
+
+li:hover {
+    background-color: aquamarine;
+    color: antiquewhite;
+    box-shadow: 10px 10px 5px yellowgreen;
+}
+
+a {
+    display: inline-block;
+}
