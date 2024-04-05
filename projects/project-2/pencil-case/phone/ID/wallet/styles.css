@@ -1,0 +1,25 @@
+body {
+    background-image: url('https://i.pinimg.com/originals/94/8e/31/948e31d8046c8b13f52afe071c19b756.gif');
+    background-size: cover;
+}
+
+.blink {
+    animation: blink 3s infinite;
+  }
+  
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      color: rgb(224, 249, 0);
+    }
+  }
+
+  h1 {
+    font-size: 50px;
+    font-family: Haettenschweiler,sans-serif;
+    color: rgb(255, 252, 71);
+    text-align: right;
+}
