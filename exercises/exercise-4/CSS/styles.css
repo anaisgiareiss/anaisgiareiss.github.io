@@ -1,0 +1,154 @@
+
+/* navigation */
+.navigation {
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    width: 300px;
+
+    display: none;
+
+    /* display none */
+}
+
+/* colors */
+:root {
+    --bgcolor: rgb(254, 254, 254);
+    --text-color: rgb(193, 235, 23);
+    --primary-color: rgb(236, 42, 16);
+    --secondary-color: rgb(112, 83, 241); 
+}
+
+
+
+/* fonts */
+@font-face {
+    font-family: 'Absans';
+    src: url('../fonts/Absans-Regular.woff2');
+}
+
+@font-face {
+    font-family: 'SpratVF';
+    src: url('../fonts/Sprat-Regular.woff2');
+}
+
+/* body  */
+body {
+    background-color: var(--bgcolor);
+    color: var(--primary-color);
+    max-width: 700px;
+    margin: auto;
+    font-family: 'Absans', sans-serif;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: flex-start;
+
+    body.light {
+        background-color:white
+        color: black;
+    }
+
+    body.dark {
+        background: black;
+        color: white;
+    }
+}
+
+/* main */
+main {
+    background-color: rgb(179, 214, 214);
+    max-width: 100%;
+}
+
+/* images */
+img {
+    display: block;
+    max-width: 100%;
+    padding: 2rem;
+    border: border-width border-style border-color;
+    border-width: 5px;
+    border-style: dotted;
+    border-color: var(--secondary-color);
+    box-sizing: border-box;
+}
+
+/* text */
+p {
+    font-size: 18px;
+    font-family: 'SpratVF', Regular;
+}
+
+/* header 3 */
+h3 {
+    color: var(--primary-color)
+}
+
+h3 + p {
+    text-indent: 2rem;
+}
+
+/* header 1 */
+h1 {
+    color: var(--secondary-color)
+}
+
+h1 + p {
+    text-indent: 2rem;
+}
+
+.highlighted-text {
+    background-color: rgb(226, 226, 134);
+    font-weight: lighter
+    ;}
+
+.navigation a{
+    color:rgb(148, 12, 80)
+}
+
+.navigation a:hover{
+    color:aquamarine
+}
+
+/* media */
+@media screen and (min-width: 400px) {
+    
+    .navigation {
+        display: block;
+        order: 2;
+    }
+
+    main{
+        order: 1;
+    }
+}
+
+/* medium screens */
+@media screen and (min-width: 500px) {
+    
+    .navigation {
+        display: block;
+        order: 2;
+    }
+
+    main{
+        order: 1;
+    }
+}
+
+/* large screens */
+@media screen and (min-width: 1000px) {
+    
+    .navigation {
+        order: 1;
+        flex-basis: 300px;
+
+        position: sticky;
+        top: 30px;
+    }
+
+    main{
+        order: 2;
+        flex-basis: calc(100% - 300px - 20px)
+    }
+}
